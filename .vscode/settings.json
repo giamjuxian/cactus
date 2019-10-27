@@ -1,0 +1,19 @@
+{
+  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"],
+  "appService.defaultWebAppToDeploy": "/subscriptions/e467fd96-caa2-4e8f-9aeb-977430f4fcaf/resourceGroups/hackathon-team-03/providers/Microsoft.Web/sites/cactus-hackhlth",
+  "appService.deploySubpath": "",
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript-react]": {
+    "editor.formatOnSave": true
+  },
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "editor.formatOnSave": true
+}

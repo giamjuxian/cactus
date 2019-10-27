@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FHIR Patient browser sample app</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.0/js/msal.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftContainer">
+            <p id="WelcomeMessage">Welcome to the FHIR Patient browsing sample Application</p>
+            <button id="signInButton">Sign In</button>
+        </div>
+        <div class="patientTable">
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(() => {
+            $("#signInButton").click(() => {
+                signIn();
+            });
+        });
+    </script>
+</body>
+
+</html>
