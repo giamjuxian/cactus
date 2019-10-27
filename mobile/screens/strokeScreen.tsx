@@ -16,7 +16,7 @@ interface State {
   isLoading: boolean;
 }
 
-class DiabetesScreen extends React.PureComponent<Props, State> {
+class StrokeScreen extends React.PureComponent<Props, State> {
   state: State = {
     isLoading: true
   };
@@ -71,12 +71,12 @@ class DiabetesScreen extends React.PureComponent<Props, State> {
             <>
               <Image
                 style={styles.dashboardImage}
-                source={require("../assets/risky.png")}
+                source={require("../assets/save.png")}
               />
               <View style={{ marginTop: 20 }}>
-                <Text style={styles.title}>Your Score - 0.743</Text>
+                <Text style={styles.title}>Your Score - 0.143</Text>
 
-                <Text style={styles.title}>You are at risk of Diabetes</Text>
+                <Text style={styles.title}>You are not at risk of Stroke</Text>
               </View>
 
               <View
@@ -97,7 +97,7 @@ class DiabetesScreen extends React.PureComponent<Props, State> {
                   Average Daily Steps - 5574
                 </Text>
                 <Progress.Bar
-                  progress={0.9}
+                  progress={0.3}
                   width={300}
                   color="red"
                   borderWidth={0}
@@ -107,16 +107,16 @@ class DiabetesScreen extends React.PureComponent<Props, State> {
               <View
                 style={[
                   styles.sectionContainer,
-                  { backgroundColor: dangerColorBackground }
+                  { backgroundColor: healthyColorBackground }
                 ]}
               >
                 <Text style={styles.sectionTitle}>
                   Average Daily Calorie Intake - 2355
                 </Text>
                 <Progress.Bar
-                  progress={0.55}
+                  progress={0.2}
                   width={300}
-                  color="red"
+                  color="green"
                   borderWidth={0}
                 />
               </View>
@@ -124,16 +124,16 @@ class DiabetesScreen extends React.PureComponent<Props, State> {
               <View
                 style={[
                   styles.sectionContainer,
-                  { backgroundColor: dangerColorBackground }
+                  { backgroundColor: healthyColorBackground }
                 ]}
               >
                 <Text style={styles.sectionTitle}>
                   Blood Sodium Level - 146
                 </Text>
                 <Progress.Bar
-                  progress={0.2}
+                  progress={0.12}
                   width={300}
-                  color="red"
+                  color="green"
                   borderWidth={0}
                 />
               </View>
@@ -148,7 +148,7 @@ class DiabetesScreen extends React.PureComponent<Props, State> {
                   Blood Calcium Level - 9.5
                 </Text>
                 <Progress.Bar
-                  progress={0.2}
+                  progress={0.1}
                   width={300}
                   color="green"
                   borderWidth={0}
@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 10,
     fontSize: 25,
-    color: "red",
+    color: "green",
     textAlign: "center"
   },
   dashboardImage: {
@@ -200,4 +200,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default withNavigation(DiabetesScreen);
+export default withNavigation(StrokeScreen);

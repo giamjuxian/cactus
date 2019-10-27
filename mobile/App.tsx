@@ -9,6 +9,7 @@ import LoginScreen from "./screens/loginScreen";
 import PreferenceScreen from "./screens/preferenceScreen";
 import DashboardScreen from "./screens/dashboardScreen";
 import DiabetesScreen from "./screens/diabetesScreen";
+import StrokeScreen from "./screens/strokeScreen";
 
 export default class App extends React.PureComponent {
   appContainer = React.createRef<NavigationContainerComponent>();
@@ -53,10 +54,11 @@ const RootStack = createStackNavigator(
     Login: LoginScreen,
     Preference: PreferenceScreen,
     Dashboard: DashboardScreen,
-    Diabetes: DiabetesScreen
+    Diabetes: DiabetesScreen,
+    Stroke: StrokeScreen
   },
   {
-    initialRouteName: "Diabetes"
+    initialRouteName: "Login"
   }
 );
 

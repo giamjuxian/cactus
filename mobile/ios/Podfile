@@ -36,4 +36,6 @@ target 'mobile' do
 
   pod 'ReactNativeART', :path => '../node_modules/@react-native-community/art'
 
+  pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
+
 end
